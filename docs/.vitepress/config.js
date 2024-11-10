@@ -2,6 +2,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 import fs from 'fs'
 import path from 'path'
+import sitemap from 'vite-plugin-sitemap';
 
 export default defineConfig({
   ignoreDeadLinks: true,
@@ -27,6 +28,15 @@ export default defineConfig({
       src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3614504270218797', crossorigin: 'anonymous'
     }]
   ],
+  vite: {
+    plugins: [
+      sitemap({
+        hostname: 'https://ruanyf-weekly.programnotes.cn', // 你的网站域名
+        exclude: ['**/404.html'], // 排除某些页面
+        // 其他配置项
+      })
+    ]
+  },
   markdown: {
     headers: {
       level: [0, 1]
