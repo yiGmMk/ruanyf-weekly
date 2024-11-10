@@ -15,24 +15,17 @@ export default defineConfig({
     ['script', {
       src: '/_vercel/insights/script.js', defer: ''
     }],
-    ['script', {
-      src: '/analytic.js', defer: '',
-      'data-website-id': 'd49602a4-673c-4b6f-b2ca-8e5c2b358850',
-      'data-host-url': "https://api.counter.plantree.me/umami"
-    }],
     ['meta', { name: 'theme-color', content: '#3c8772' }],
+    ['meta', { name: 'msvalidate.01', content: 'B6FE76A783A1770409EC903DE2C7AC6A' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: '阮一峰的技术周刊 | 小站' }],
     ['meta', { property: 'og:description', content: '科技, 分享, 开源' }],
-    ['meta', { property: 'og:image', content: 'https://ruanyf-weekly.plantree.me/thumbnail.jpg' }],
-    ['meta', { property: 'og:url', content: 'https://ruanyf-weekly.plantree.me/' }],
-    // google analytics
-    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-2QFP04Q1TY' }],
-    ['script', {}, `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-2QFP04Q1TY');`],
+    ['meta', { property: 'og:image', content: 'https://ruanyf-weekly.programnotes.cn/thumbnail.jpg' }],
+    ['meta', { property: 'og:url', content: 'https://ruanyf-weekly.programnotes.cn/' }],
+    ['script', {
+      async: '',
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3614504270218797', crossorigin: 'anonymous'
+    }]
   ],
   markdown: {
     headers: {
@@ -50,20 +43,15 @@ export default defineConfig({
         link: 'https://github.com/ruanyf/weekly'
       },
       {
-        text: '个人博客',
-        link: 'https://plantree.me/'
-      },
-      {
-        text: '移动端阅读',
-        link: '/qrcode.png'
+        text: '导航',
+        link: 'https://nav.programnotes.cn'
       }
     ],
     sidebar: {
       '/weekly/': sidebarWeekly(),
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/plantree/ruanyf-weekly' },
-      { icon: 'discord', link: 'https://discord.gg/ffRG4mWzFZ' }
+      { icon: 'github', link: 'https://github.com/plantree/ruanyf-weekly' }
     ],
     footer: {
       message: 'Released under the MIT License.',
