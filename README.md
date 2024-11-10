@@ -8,8 +8,6 @@
 
 > 声明: 非官方！！！官网链接在https://www.ruanyifeng.com/blog/
 
-网站地址在：https://ruanyf-weekly.plantree.me/
-
 #### 一. 背景
 
 个人平时比较喜欢看阮一峰老师的技术周刊，文笔简练，条理清晰。
