@@ -27,6 +27,9 @@ export default defineConfig({
       src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3614504270218797', crossorigin: 'anonymous'
     }]
   ],
+  sitemap: {
+    hostname: 'https://ruanyf-weekly.programnotes.cn'
+  },
   markdown: {
     headers: {
       level: [0, 1]
