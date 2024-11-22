@@ -48,6 +48,10 @@ export default defineConfig({
       {
         text: '导航',
         link: 'https://nav.programnotes.cn'
+      },
+      {
+        text: 'Producthunt热榜',
+        link: 'https://producthunt.programnotes.cn'
       }
     ],
     sidebar: {
