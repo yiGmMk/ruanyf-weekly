@@ -43,7 +43,7 @@ export default defineConfig({
       },
       {
         text: '技术周刊',
-        link: 'https://github.com/ruanyf/weekly'
+        link: 'https://weekly.programnotes.cn'
       },
       {
         text: '导航',
