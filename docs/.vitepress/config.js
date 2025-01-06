@@ -22,10 +22,6 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: '科技, 分享, 开源' }],
     ['meta', { property: 'og:image', content: 'https://ruanyf-weekly.programnotes.cn/thumbnail.jpg' }],
     ['meta', { property: 'og:url', content: 'https://ruanyf-weekly.programnotes.cn/' }],
-    ['script', {
-      async: '',
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3614504270218797', crossorigin: 'anonymous'
-    }]
   ],
   sitemap: {
     hostname: 'https://ruanyf-weekly.programnotes.cn'
