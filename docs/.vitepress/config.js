@@ -42,7 +42,7 @@ export default defineConfig({
         link: 'https://weekly.programnotes.cn'
       },
       {
-        text: '导航',
+        text: 'AI导航',
         link: 'https://nav.programnotes.cn'
       },
       {
