@@ -7,7 +7,10 @@ export default defineConfig({
   ignoreDeadLinks: true,
   title: 'ruanyf-weekly',
   description: '阮一峰的技术周刊',
-  lastUpdated: true,
+  // 周刊正文由 scripts/main.sh 在构建期生成，且被 .gitignore 排除、未纳入 git。
+  // 开启 lastUpdated 会让 VitePress 为每篇 md 各 spawn 一次 `git log`，
+  // 418 篇并发在 CI 容器里会耗尽文件描述符并报 spawn git EMFILE，故关闭。
+  lastUpdated: false,
   cleanUrls: true,
   lang: 'zh-CN',
   head: [

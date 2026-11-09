@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs; bash ./scripts/build-hook.sh",
+    "build": "vitepress build docs && bash ./scripts/build-hook.sh",
     "preview": "vitepress preview docs"
   },
   "repository": {
